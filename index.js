@@ -7,7 +7,7 @@ const app = express();
 app.use(express.static('../internshipAssignment'));
 
 //connecting to the database 
-mongoose.connect('mongodb://127.0.0.1:27017/AssignmentDB',{useNewUrlParser:true});
+mongoose.connect('mongodb+srv://dbAdmin:admin@1234@cluster0-lhubz.mongodb.net/test?retryWrites=true',{useNewUrlParser:true});
 var db = mongoose.connection;
 console.log('connected to database sucessfully !');
 //handling connection error 
